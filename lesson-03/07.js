@@ -4,6 +4,10 @@ const numbers = [
     [111, 200, 333, 400, 555],
 ];
 
-numbers.map(item => item.filter(item2 => item2 % 2 == 0)
+numbers.map(item => item.filter((item2, index) => {
+    if (item2 % 2 != 0) {
+        item.splice(index, 1)
+    }
+}))
 
 console.log(numbers)
