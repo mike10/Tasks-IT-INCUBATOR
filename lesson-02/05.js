@@ -4,7 +4,7 @@ let passport = {
 };
 
 let passport2 = { ...passport }
-passport.name = 'Ivan'
+passport2.name = 'Ivan'
 
 console.log(passport)
 console.log(passport2)
